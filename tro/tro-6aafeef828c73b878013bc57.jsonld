@@ -1,0 +1,393 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "sivacor": "https://vocabulary.sivacor.org/0.1/",
+    "trov": "https://w3id.org/trace/trov/0.1#"
+  },
+  "@graph": [
+    {
+      "@id": "tro",
+      "@type": [
+        "trov:TransparentResearchObject",
+        "schema:CreativeWork"
+      ],
+      "schema:creator": "SIVACOR/tro_utils",
+      "schema:dateCreated": "2026-09-20T14:37:31.579427",
+      "schema:description": "SIVACOR Run",
+      "schema:name": "tense-backlist",
+      "trov:createdWith": {
+        "@type": "schema:SoftwareApplication",
+        "schema:name": "tro-utils",
+        "schema:softwareVersion": "0.4.6"
+      },
+      "trov:hasArrangement": [
+        {
+          "@id": "arrangement/0",
+          "@type": "trov:ArtifactArrangement",
+          "rdfs:comment": "Before executing workflow",
+          "trov:hasArtifactLocation": [
+            {
+              "@id": "arrangement/0/location/0",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/0"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/main.R"
+            },
+            {
+              "@id": "arrangement/0/location/1",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/1"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/.gitignore"
+            },
+            {
+              "@id": "arrangement/0/location/2",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/2"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/.sivacorignore"
+            },
+            {
+              "@id": "arrangement/0/location/3",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/3"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/README.md"
+            }
+          ]
+        },
+        {
+          "@id": "arrangement/1",
+          "@type": "trov:ArtifactArrangement",
+          "rdfs:comment": "After executing workflow step 1",
+          "trov:hasArtifactLocation": [
+            {
+              "@id": "arrangement/1/location/0",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/0"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/main.R"
+            },
+            {
+              "@id": "arrangement/1/location/1",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/1"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/.gitignore"
+            },
+            {
+              "@id": "arrangement/1/location/2",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/2"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/.sivacorignore"
+            },
+            {
+              "@id": "arrangement/1/location/3",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/3"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/README.md"
+            },
+            {
+              "@id": "arrangement/1/location/4",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/4"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/data/sp500.csv"
+            },
+            {
+              "@id": "arrangement/1/location/5",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/5"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/data/sp500.json"
+            },
+            {
+              "@id": "arrangement/1/location/6",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/6"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/results/sp500.png"
+            }
+          ]
+        },
+        {
+          "@id": "arrangement/2",
+          "@type": "trov:ArtifactArrangement",
+          "rdfs:comment": "After executing workflow step 2",
+          "trov:hasArtifactLocation": [
+            {
+              "@id": "arrangement/2/location/0",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/0"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/main.R"
+            },
+            {
+              "@id": "arrangement/2/location/1",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/1"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/.gitignore"
+            },
+            {
+              "@id": "arrangement/2/location/2",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/2"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/.sivacorignore"
+            },
+            {
+              "@id": "arrangement/2/location/3",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/3"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/README.md"
+            },
+            {
+              "@id": "arrangement/2/location/4",
+              "@type": "trov:ArtifactLocation",
+              "trov:artifact": {
+                "@id": "composition/1/artifact/6"
+              },
+              "trov:path": "sivacor-test-remove-files-sivacor/results/sp500.png"
+            }
+          ]
+        }
+      ],
+      "trov:hasAttribute": [],
+      "trov:hasComposition": {
+        "@id": "composition/1",
+        "@type": "trov:ArtifactComposition",
+        "trov:hasArtifact": [
+          {
+            "@id": "composition/1/artifact/0",
+            "@type": "trov:ResearchArtifact",
+            "trov:hash": {
+              "trov:hashAlgorithm": "sha256",
+              "trov:hashValue": "ff2b216b1732431af22511ab1dd89d9b826ea0969a894da25f20b66fad4a5a14"
+            },
+            "trov:mimeType": "text/plain"
+          },
+          {
+            "@id": "composition/1/artifact/1",
+            "@type": "trov:ResearchArtifact",
+            "trov:hash": {
+              "trov:hashAlgorithm": "sha256",
+              "trov:hashValue": "8f9d1a1c8180ac4c53458437d88ff77afec02726e9204f902572724877f6f803"
+            },
+            "trov:mimeType": "text/plain"
+          },
+          {
+            "@id": "composition/1/artifact/2",
+            "@type": "trov:ResearchArtifact",
+            "trov:hash": {
+              "trov:hashAlgorithm": "sha256",
+              "trov:hashValue": "c5049c183f87267ff36ee98b52517e1f78670639f3a060baa89d4093a555f59b"
+            },
+            "trov:mimeType": "text/plain"
+          },
+          {
+            "@id": "composition/1/artifact/3",
+            "@type": "trov:ResearchArtifact",
+            "trov:hash": {
+              "trov:hashAlgorithm": "sha256",
+              "trov:hashValue": "bca4719934401534cd08faf861bd3add9424c99d69308aa50953108c1f3eb8f9"
+            },
+            "trov:mimeType": "text/plain"
+          },
+          {
+            "@id": "composition/1/artifact/4",
+            "@type": "trov:ResearchArtifact",
+            "trov:hash": {
+              "trov:hashAlgorithm": "sha256",
+              "trov:hashValue": "77fd7af66015b53ff3cd0384aaa053fe057d56f6c61c3651fed80651237a601c"
+            },
+            "trov:mimeType": "text/plain"
+          },
+          {
+            "@id": "composition/1/artifact/5",
+            "@type": "trov:ResearchArtifact",
+            "trov:hash": {
+              "trov:hashAlgorithm": "sha256",
+              "trov:hashValue": "24e01a5e3c3724a2f91c0542fe52ddb7370c0bf83c7e2cd47ec792361409fdec"
+            },
+            "trov:mimeType": "application/json"
+          },
+          {
+            "@id": "composition/1/artifact/6",
+            "@type": "trov:ResearchArtifact",
+            "trov:hash": {
+              "trov:hashAlgorithm": "sha256",
+              "trov:hashValue": "434eb8ec0f277edea9ff0f2abe99ecc61e9d2b13e5b42cad400acc9d8ff08e03"
+            },
+            "trov:mimeType": "image/png"
+          }
+        ],
+        "trov:hasFingerprint": {
+          "@id": "fingerprint",
+          "@type": "trov:CompositionFingerprint",
+          "trov:hash": {
+            "trov:hashAlgorithm": "sha256",
+            "trov:hashValue": "bddeffc76be8e9eab4c377d576fe9bdbc5f986ea058b00e5ba7924205f50c657"
+          }
+        }
+      },
+      "trov:hasPerformance": [
+        {
+          "@id": "trp/0",
+          "@type": "trov:TrustedResearchPerformance",
+          "rdfs:comment": "SIVACOR workflow execution (main.R) step 1",
+          "sivacor:Architecture": "x86_64",
+          "sivacor:CPUSecondsTotal": 2.394,
+          "sivacor:DockerRunArgs": "{\"image\": \"rocker/tidyverse:4.5.1\", \"entrypoint\": [\"/usr/local/bin/R\", \"--no-save\", \"--no-restore\", \"-f\"], \"command\": \"main.R\", \"detach\": true, \"mounts\": [{\"Target\": \"/workspace\", \"Source\": \"/home/ubuntu/volumes/tmp/workspace-6aafefabaf8d9baf9f2b3faa\", \"Type\": \"bind\", \"ReadOnly\": false}, {\"Target\": \"/tmp\", \"Source\": \"/home/ubuntu/volumes/tmp/tmp-6aafefabaf8d9baf9f2b3faa\", \"Type\": \"bind\", \"ReadOnly\": false}], \"network_disabled\": false, \"read_only\": true, \"working_dir\": \"/workspace/project/sivacor-test-remove-files-sivacor\", \"user\": \"1000:1000\", \"environment\": {\"TMPDIR\": \"/tmp\", \"TEMP\": \"/tmp\", \"TMP\": \"/tmp\", \"HOME\": \"/workspace\", \"R_LIBS\": \"/workspace/R/library\", \"R_LIBS_USER\": \"/workspace/R/library\", \"MLM_LICENSE_FILE\": \"27007@rtlicense1.uits.indiana.edu\", \"FRED_APIKEY\": \"***SECRET_REDACTED***\"}, \"labels\": {\"org.sivacor.worker_queue\": \"sivacor.087393fb-4b6d-4a6f-9ac2-f9adf072f9ed\", \"org.sivacor.job_id\": \"6aafeef828c73b878013bc57\"}, \"mem_limit\": 29382443008, \"memswap_limit\": 29382443008}",
+          "sivacor:FinishedAt": "2026-09-20T14:37:58.980070291Z",
+          "sivacor:ImageRepoDigests": [
+            "rocker/tidyverse@sha256:c38f0fea583e3aa82d89d0038e5bb559a04fa813881031f61f6191e683954cf2"
+          ],
+          "sivacor:ImageRepoTags": [
+            "rocker/tidyverse:4.5.1"
+          ],
+          "sivacor:ImageSize": 946417236,
+          "sivacor:KernelVersion": "7.0.0-31-generic",
+          "sivacor:MaxCPUPercent": 189.27,
+          "sivacor:MaxDiskUsage": 421888,
+          "sivacor:MaxMemoryUsage": 163786752,
+          "sivacor:MemTotal": 31529926656,
+          "sivacor:NCPU": 8,
+          "sivacor:OSType": "linux",
+          "sivacor:OSVersion": "24.04",
+          "sivacor:OperatingSystem": "Ubuntu 24.04.5 LTS",
+          "sivacor:Processor": "AMD EPYC-Milan Processor",
+          "sivacor:RequestedDiskGB": null,
+          "sivacor:RequestedMemoryGB": 30,
+          "sivacor:StartedAt": "2026-09-20T14:37:56.093718357Z",
+          "sivacor:WorkspaceDiskTotal": 61285326848,
+          "trov:accessedArrangement": {
+            "@id": "trp/0/binding/0",
+            "@type": "trov:ArrangementBinding",
+            "trov:arrangement": {
+              "@id": "arrangement/0"
+            },
+            "trov:boundTo": "/workspace"
+          },
+          "trov:contributedToArrangement": {
+            "@id": "trp/0/binding/1",
+            "@type": "trov:ArrangementBinding",
+            "trov:arrangement": {
+              "@id": "arrangement/1"
+            },
+            "trov:boundTo": "/workspace"
+          },
+          "trov:endedAtTime": "2026-09-20T14:37:59.886075",
+          "trov:hasPerformanceAttribute": [
+            {
+              "@id": "trp/0/attribute/0",
+              "@type": "trov:EnvironmentIsolation",
+              "trov:warrantedBy": {
+                "@id": "trs/capability/1"
+              }
+            },
+            {
+              "@id": "trp/0/attribute/1",
+              "@type": "trov:NonInteractiveExecution",
+              "trov:warrantedBy": {
+                "@id": "trs/capability/3"
+              }
+            },
+            {
+              "@id": "trp/0/attribute/2",
+              "@type": "trov:CapabilitiesTechnicallyEnforced",
+              "trov:warrantedBy": {
+                "@id": "trs/capability/4"
+              }
+            }
+          ],
+          "trov:startedAtTime": "2026-09-20T14:37:31.830505",
+          "trov:wasConductedBy": {
+            "@id": "trs"
+          }
+        },
+        {
+          "@id": "trp/1",
+          "@type": "trov:TrustedResearchPerformance",
+          "rdfs:comment": "SIVACOR Workspace pruning step",
+          "trov:accessedArrangement": {
+            "@id": "trp/1/binding/0",
+            "@type": "trov:ArrangementBinding",
+            "trov:arrangement": {
+              "@id": "arrangement/1"
+            },
+            "trov:boundTo": "/workspace"
+          },
+          "trov:contributedToArrangement": {
+            "@id": "trp/1/binding/1",
+            "@type": "trov:ArrangementBinding",
+            "trov:arrangement": {
+              "@id": "arrangement/2"
+            },
+            "trov:boundTo": "/workspace"
+          },
+          "trov:endedAtTime": "2026-09-20T14:38:00.663937",
+          "trov:hasPerformanceAttribute": [],
+          "trov:startedAtTime": "2026-09-20T14:38:00.660524",
+          "trov:wasConductedBy": {
+            "@id": "trs"
+          }
+        }
+      ],
+      "trov:vocabularyVersion": "0.1",
+      "trov:wasAssembledBy": {
+        "@id": "trs",
+        "@type": [
+          "trov:TrustedResearchSystem",
+          "schema:Organization"
+        ],
+        "rdfs:comment": "SIVACOR TRO profile",
+        "sivacor:stackVersion": "0.3.0",
+        "trov:contact": "admin@sivacor.org",
+        "trov:description": "SIVACOR AEA Infrastructure",
+        "trov:hasCapability": [
+          {
+            "@id": "trs/capability/1",
+            "@type": "trov:CanIsolateEnvironment"
+          },
+          {
+            "@id": "trs/capability/2",
+            "@type": "trov:CanProvideInternetIsolation"
+          },
+          {
+            "@id": "trs/capability/3",
+            "@type": "trov:CanPreventAuthorIntervention"
+          },
+          {
+            "@id": "trs/capability/4",
+            "@type": "trov:CanEnforceCapabilitiesTechnically"
+          }
+        ],
+        "trov:name": "sivacor",
+        "trov:owner": "SIVACOR Team",
+        "trov:publicKey": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nmDMEaRZowxYJKwYBBAHaRw8BAQdAZE3O+GSW5cJRjptdb8N7UW6jI7l6URVid7Qy\nsO4TTMO0IVNJVkFDT1IgVFJTIDxlZGl0b3JzQHNpdmFjb3Iub3JnPoiTBBMWCgA7\nFiEE99tIU58getRhLcQI2LsgcYYq/0oFAmkWaMMCGwMFCwkIBwICIgIGFQoJCAsC\nBBYCAwECHgcCF4AACgkQ2LsgcYYq/0roKAEAzcHiTUWZPf7IrTct0Zc9wV6C6pIi\nJz5s6EvopXMbiA4A/06xb/as9R479KXUtS7GmuIe5A1cKn6IHnu0gt1v9CUJtCFB\nZG1pbiBTSVZBQ09SIDxhZG1pbkBzaXZhY29yLm9yZz6IkwQTFgoAOxYhBPfbSFOf\nIHrUYS3ECNi7IHGGKv9KBQJpfQJHAhsDBQsJCAcCAiICBhUKCQgLAgQWAgMBAh4H\nAheAAAoJENi7IHGGKv9KnDcBAMAw+4jrpQGsbaJrgs/2MO/Q2TYTH2Rlsh9WVT1l\nLlYYAP0W+WkIs+J0VnuEXCrLcc6rc9iQUiBKb7lWqTaaECk1Bbg4BGkWaMMSCisG\nAQQBl1UBBQEBB0BoHfFiGW3Stl+JnlWswb3vpXuiEVAmWUst/dTIbk9NEgMBCAeI\neAQYFgoAIBYhBPfbSFOfIHrUYS3ECNi7IHGGKv9KBQJpFmjDAhsMAAoJENi7IHGG\nKv9Kmu0BAOcqj2DerJgZH7126goV0tXBqncbG5MPuzufGmdjYJ07AQCJAX/uj9X/\nv+YHdwl32ozy/kKWYaqlbrODQUbgSu0xBA==\n=iFZz\n-----END PGP PUBLIC KEY BLOCK-----\n",
+        "trov:url": "https://sivacor.org/"
+      }
+    }
+  ]
+}

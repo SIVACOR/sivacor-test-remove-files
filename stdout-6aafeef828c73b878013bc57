@@ -1,0 +1,95 @@
+
+
+===== Stage 1 Output =====
+
+
+R version 4.5.1 (2025-06-13) -- "Great Square Root"
+Copyright (C) 2025 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> # Load necessary libraries
+> library(httr)
+> library(jsonlite)
+> library(dplyr)
+> library(ggplot2)
+> library(readr)
+> library(lubridate)
+> 
+> # 1. Read the API key from environment variables
+> apikey <- Sys.getenv("FRED_APIKEY")
+> 
+> # Safety check: Stop if the API key isn't set
+> if (apikey == "") {
++   stop("Environment variable 'FRED_APIKEY' not found. Please set it before running.")
++ }
+> 
+> # 2. Create directories if they don't exist
+> paths <- c("data", "results")
+> for (path in paths) {
++   if (!dir.exists(path)) {
++     dir.create(path)
++   }
++ }
+> 
+> # 3. Define parameters and URL
+> series <- "SP500"
+> start  <- "2019-01-01"
+> end    <- "2024-01-01"
+> 
+> url <- paste0(
++   "https://api.stlouisfed.org/fred/series/observations?",
++   "series_id=", series,
++   "&api_key=", apikey,
++   "&observation_start=", start,
++   "&observation_end=", end,
++   "&file_type=json"
++ )
+> 
+> # 4. API Request
+> r <- GET(url)
+> stop_for_status(r)
+> 
+> # 5. Parse JSON and Save
+> json_data <- content(r, as = "parsed", type = "application/json")
+> write_json(json_data, "data/sp500.json", pretty = TRUE, auto_unbox = TRUE)
+> 
+> # 6. Convert to DataFrame and Clean
+> df <- as_tibble(do.call(rbind, lapply(json_data$observations, as.data.frame)))
+> 
+> df <- df %>%
++   select(-realtime_start, -realtime_end) %>%
++   filter(value != ".") %>%
++   mutate(
++     date = as.Date(date),
++     value = as.numeric(value)
++   )
+> 
+> # 7. Save to CSV
+> write_csv(df, "data/sp500.csv")
+> 
+> # 8. Plot and Save
+> p <- ggplot(df, aes(x = date, y = value)) +
++   geom_line(color = "steelblue") +
++   labs(
++     title = "S&P 500 (2019-2024)",
++     x = "Date",
++     y = "Index Value"
++   ) +
++   theme_minimal()
+> 
+> ggsave("results/sp500.png", plot = p, width = 8, height = 5)
+> 
