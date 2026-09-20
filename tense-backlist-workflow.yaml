@@ -9,9 +9,14 @@
 #   https://girder.sivacor.org/api/v1/sivacor/image_tags
 #
 # Secrets are never exported. If the run needs them, add:
-env_secrets:
-  - key: FRED_APIKEY
-    value: "replace-me-with-the-real-apikey"
+#   env_secrets:
+#     - key: API_TOKEN
+#       value: ""
+
+# The machine this ran on. Remove this block to take the
+# defaults instead.
+resources:
+  memory_gb: 30
 
 stages:
   - image_name: "rocker/tidyverse"
