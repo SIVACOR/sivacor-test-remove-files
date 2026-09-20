@@ -11,4 +11,7 @@ This simple example is intended to demonstrate the following scenario:
 
 To run this example:
 * [Obtain a FRED API key](https://fred.stlouisfed.org/docs/api/api_key.html) and provide it as an environment variable named `FRED_APIKEY` in the SIVACOR submission form.
+
+![](sivacor-fred-apikey.png)
+
 * Run with `rocker/tidyverse:4.5.2` or later
